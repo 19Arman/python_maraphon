@@ -185,10 +185,10 @@ async def opener_dialog(update,context):
 
 
 dialog = Dialog()
-dialog.mode = None
-dialog.list = []
-dialog.count = 0
-dialog.user = {}
+dialog.mode = None    #Режим общения, в зависимости от нажатой кнопки
+dialog.list = []     # История общения
+dialog.count = 0     # Счетчик вопросов
+dialog.user = {}    
 
 chatgpt = ChatGptService(token="Здесь стоит токен чата GPT  я использовал версию 3.5 турбо")
 app = ApplicationBuilder().token("Api token").build()
